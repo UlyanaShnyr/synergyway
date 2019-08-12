@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<h3 >Product List</h3>
+<div *ngFor="let product of products" class="product-cart">
+    <div class="card" style="width: 18rem;" >
+      <div class="card-body" >          
+          <h5 class="card-title" >  {{ product.name }} </h5>
+          <p>Price: {{ product.price }}$</p>
+          <p class="card-text">{{product.label}}</p>
+          <a href="#" class="btn btn-primary" [routerLink]="['/cart', { id:product.id }]" >Add To Cart</a> 
+      </div>
+    </div>
+  </div>

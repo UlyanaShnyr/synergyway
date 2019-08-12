@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Synergy-Way</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="float: right;">
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a class="nav-link" [routerLink]="['product']" href="/product">Products <span
+            class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" [routerLinkActive]="['active']">
+        <a [routerLink]="['cart']" class="nav-link" href="/cart"> Cart
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 226 226"
+            style=" fill:#000000;">
+            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+              stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+              font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+              <path d="M0,226v-226h226v226z" fill="none"></path>
+              <g fill="#ffffff">
+                <g id="surface1">
+                  <path
+                    d="M14.125,14.01466v14.125h28.25c3.03467,0 5.62794,1.98633 6.62109,4.85547l13.18702,117.68994c1.21386,10.64892 10.37305,18.81494 21.07714,18.81494h86.23975v-14.125h-86.23975c-3.64159,0 -6.62109,-2.64844 -7.00731,-6.23486l-0.88281,-7.89014h89.60547c10.04199,0 18.81494,-7.17284 20.80127,-16.99414l13.51806,-67.75586h-133.47022l-3.03466,-26.92578l-0.2207,-0.66211c-2.70362,-8.82812 -10.92481,-14.84228 -20.19434,-14.89745zM155.375,169.5c-7.77978,0 -14.125,6.34522 -14.125,14.125c0,7.77978 6.34522,14.125 14.125,14.125c7.77978,0 14.125,-6.34522 14.125,-14.125c0,-7.77978 -6.34522,-14.125 -14.125,-14.125zM84.75,169.5c-7.77978,0 -14.125,6.34522 -14.125,14.125c0,7.77978 6.34522,14.125 14.125,14.125c7.77978,0 14.125,-6.34522 14.125,-14.125c0,-7.77978 -6.34522,-14.125 -14.125,-14.125zM67.42481,70.625h114.65527l-10.15234,50.81689c-0.71728,3.36573 -3.53125,5.68311 -6.95214,5.68311h-91.20558z">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          {{inc}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

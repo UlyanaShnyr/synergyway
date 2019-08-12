@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<h3 class="cart-header">Items in Your Cart</h3>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total Item</th>
+        <th>Remove</th>
+
+    </tr>
+    <tr *ngFor="let item of items">
+        <td>{{item.product.name}}</td>
+        <td>{{item.product.label}}</td>
+        <td>{{item.product.price}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.product.price * item.quantity}}</td>
+        <td >
+            <button class="btn btn-primary" type="submit" (click)="remove(item.product.id)">Delete</button>
+        </td>  
+    </tr>
+</table>
+<h3>Total</h3>
+<h3>{{total}}</h3>
+
